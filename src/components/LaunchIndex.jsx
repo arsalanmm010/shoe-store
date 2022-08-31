@@ -3,7 +3,7 @@ import shoes from "../shoes";
 import { NavLink } from "react-router-dom";
 const LaunchIndex = () => {
   return (
-    <ul>
+    <ul className="product">
       {Object.entries(shoes).map(([slug, { name, img }]) => (
         <li key={slug}>
           <NavLink
@@ -17,7 +17,7 @@ const LaunchIndex = () => {
             }}
             to={`/Launch/${slug}`}
           >
-            <h2>{name}</h2>
+            <h3>{name}</h3>
             <img src={img} alt={name} />
           </NavLink>
         </li>
