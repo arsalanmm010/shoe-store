@@ -1,6 +1,7 @@
 import React from "react";
-
-export const Home = () => {
+import shoes from "../shoes";
+const Home = () => {
+  console.log(shoes);
   return (
     <div>
       <h1>Welcome Home!</h1>
@@ -11,3 +12,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;

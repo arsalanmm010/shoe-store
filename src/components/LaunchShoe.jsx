@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Launch from "./Launch";
 import shoes from "../shoes";
 const LaunchShoe = () => {
